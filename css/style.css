@@ -23,6 +23,30 @@ body {
   background: rgb(98, 98, 98);
 }
 
+/* FONTAWESOME ICONS */
+
+.fa-cogs {
+  font-size: 3em;
+}
+
+/* FONTS 
+font-family: "Roboto", sans-serif;  (ALL WEIGHTS)
+font-family: "Open Sans", sans-serif;  (REGULAR ONLY)
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
 /* BROWSER STYLE CSS */
 /* BROWSER STYLE WINDOWS CSS SETTINGS FOR MAIN BROWSER WINDOWS */
 
@@ -35,6 +59,24 @@ body {
   box-shadow: 2px 2px 10px #0f0f0f;
 }
 
+.browser_content {
+  display: flex;
+  height: 90%;
+}
+
+.contentleft {
+  width: 20%;
+  margin-right: 10%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.contentright {
+  width: 70%;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .browsershort {
   height: 200px;
   margin-bottom: 30px;
@@ -42,7 +84,8 @@ body {
 
 .browsershort_sec {
   height: 450px;
-  background-image: url(/portfolio_project/images/01.jpg);
+  /* background-image: url(/portfolio_project/images/01.jpg); */
+  background-image: url(./images/01.jpg);
   background-size: cover;
 }
 
@@ -108,20 +151,6 @@ body {
   height: 300px;
   /* placeholder top of header section */
 }
-
-/* .header_section_placeholder_two {
-  display: flex;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  width: 100%;
-  height: 350px;
-  margin-top: -350px;
-  /* white gradiant on top of header section gradiant 
-} */
 
 /* PROJECTS SECTION */
 
