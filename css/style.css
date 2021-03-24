@@ -5,6 +5,24 @@ body {
   background-color: #141414;
 }
 
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(98, 98, 98);
+}
+
 /* BROWSER STYLE CSS */
 /* BROWSER STYLE WINDOWS CSS SETTINGS FOR MAIN BROWSER WINDOWS */
 
