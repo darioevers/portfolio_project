@@ -7,10 +7,16 @@ body {
 
 :root {
   --background: #141414;
-  --browser_background: ;
-  --browser_bar_background: ;
-  --browser_bar_buttons_background: ;
+  --browser_background: #1e1e1e;
+  --browser_box_shadow: #0f0f0f;
+  --browser_bar_background: #191919;
+  --browser_bar_buttons_background: #454545;
+  --browser_bar_button_g: #53c22b;
+  --browser_bar_button_y: #e5bf29;
+  --browser-bar-border-top: rgb(47, 47, 47);
+  --browser-bar-border-bottom: black;
   --topnav_background: #1d1d1dea;
+  --browsershort_second_inside: #1e1e1eb4;
 }
 
 /* ---------------SCROLL BAR--------------- */
@@ -169,9 +175,9 @@ a {
   border-radius: 7px;
   height: 650px;
   width: 100%;
-  background-color: #1e1e1e;
+  background-color: var(--browser_background);
   color: white;
-  box-shadow: 2px 2px 10px #0f0f0f;
+  box-shadow: 2px 2px 10px var(--browser_box_shadow);
 }
 
 .browser_content {
@@ -220,7 +226,7 @@ a {
   margin-top: 220px;
   height: 200px;
   width: 300px;
-  background-color: #1e1e1eb4;
+  background-color: var(--browsershort_second_inside);
   margin: 0 auto;
   /* flex box settings inside second flex box left settings */
 }
@@ -242,12 +248,12 @@ a {
 
 .browser_bar {
   display: flex;
-  background-color: #191919;
+  background-color: var(--browser_bar_background);
   height: 30px;
   border-radius: 7px 7px 0px 0px;
   width: 100%;
-  border-top: rgb(47, 47, 47) 1px solid;
-  border-bottom: black 1px solid;
+  border-top: var(--browser-bar-border-top) 1px solid;
+  border-bottom: var(--browser-bar-border-bottom) 1px solid;
 }
 
 /* BUTTONS */
@@ -264,7 +270,7 @@ a {
 .browser_bar_button {
   width: 12px;
   height: 12px;
-  background-color: #454545;
+  background-color: var(--browser_bar_buttons_background);
   border-radius: 100px;
   margin-right: 5px;
 }
@@ -272,15 +278,15 @@ a {
 .browser_bar_button_y {
   width: 12px;
   height: 12px;
-  background-color: #e5bf29;
+  ackground-color: var(--browser_bar_button_y);
   border-radius: 100px;
   margin-right: 5px;
 }
 
-.browser_bar_button_r {
+.browser_bar_button_g {
   width: 12px;
   height: 12px;
-  background-color: #53c22b;
+  background-color: var(--browser_bar_button_g);
   border-radius: 100px;
   margin-right: 5px;
 }
@@ -290,7 +296,7 @@ a {
 
 .header_section {
   height: 100vh;
-  background-color: #141414;
+  background-color: var(--background);
 }
 
 .header_section_content {
