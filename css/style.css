@@ -33,6 +33,33 @@ body {
   color: white;
 }
 
+.floatingMenu {
+  display: none;
+  position: fixed;
+  top: 200px;
+  right: 40px;
+  z-index: 99;
+}
+
+.browser_floating {
+  border-radius: 7px;
+  height: 350px;
+  width: 250px;
+  background-color: #1e1e1edc;
+  color: white;
+  box-shadow: 2px 2px 10px #0f0f0f;
+}
+
+.browser_bar_floating {
+  background-color: #191919;
+  height: 25px;
+  border-radius: 7px 7px 0px 0px;
+  border-top: rgb(47, 47, 47) 1px solid;
+  border-bottom: black 1px solid;
+  color: gray;
+  padding-left: 25px;
+}
+
 /* FONTAWESOME ICONS */
 
 .fa-cogs {
@@ -69,7 +96,7 @@ h6 {
   font-family: "Roboto", sans-serif;
 }
 
-p {
+* {
   font-family: "Open Sans", sans-serif;
 }
 

@@ -85,8 +85,26 @@
         </div>
       </main>
     </main>
-    <div class="floatingbutton">
+    <div onclick="contactMe()" class="floatingbutton">
       <i class="fas fa-address-book"></i>
     </div>
+    <div class="floatingMenu" id="contactMe_button">
+      <div class="browser_floating">
+        <div class="browser_bar_floating">Contact me</div>
+        <div class="browser_content">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
   </body>
+  <script>
+    function contactMe() {
+      var x = document.getElementById("contactMe_button");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 </html>
