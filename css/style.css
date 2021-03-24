@@ -35,6 +35,19 @@ body {
   box-shadow: 2px 2px 10px #0f0f0f;
 }
 
+.browsershort {
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.browsershort_sec {
+  height: 450px;
+}
+
+.browserright {
+  margin-top: 5%;
+}
+
 .browser_bar {
   display: flex;
   background-color: #191919;
@@ -68,22 +81,25 @@ body {
 .header_section {
   height: 100vh;
   background-color: #141414;
-  /* background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 255, 255, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 140, 195, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(250, 111, 255, 0.8), rgba(0, 0, 255, 0) 70.71%); */
-  /* header section background div */
 }
 
 .header_section_content {
+  display: flex;
   position: relative;
   margin: 0 auto;
-  width: 1024px;
+  margin-top: 100px;
+  width: 1200px;
   z-index: 99;
   /* header section content */
+}
+
+.header_section_content_left {
+  margin-right: 5%;
+  width: 65%;
+}
+
+.header_section_content_right {
+  width: 30%;
 }
 
 .header_section_placeholder {
