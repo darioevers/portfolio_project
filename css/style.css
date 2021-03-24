@@ -1,0 +1,53 @@
+body {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.browser {
+  margin: 100px 0px;
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 9px;
+  height: 300px;
+  background-color: #1c1f20;
+}
+
+.browser_bar {
+  display: flex;
+  background-color: #343536;
+  height: 30px;
+  border-radius: 9px 9px 0px 0px;
+  width: 100%;
+}
+
+.browser_bar_buttons {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 60px;
+  height: 20px;
+  align-items: center;
+}
+
+.browser_bar_button_one {
+  width: 12px;
+  height: 12px;
+  background-color: gray;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+.browser_bar_button_two {
+  width: 12px;
+  height: 12px;
+  background-color: gray;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+.browser_bar_button_thr {
+  width: 12px;
+  height: 12px;
+  background-color: gray;
+  border-radius: 100px;
+}
