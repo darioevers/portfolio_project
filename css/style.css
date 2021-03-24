@@ -112,39 +112,38 @@ h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-/* TOP NAVIGATION BAR */
-
-.topnav a,
-.sidenav a {
-  text-decoration: none;
-  color: white;
-  padding: 0px 15px 0px 0px;
-}
-
 a {
   text-decoration: none;
   color: white;
 }
 
+/* .topnav a,
+.sidenav a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 15px 0px 0px;
+} */
+
+/* TOP NAVIGATION BAR */
+
 .topnav_back {
   position: fixed;
+  display: flex;
+  justify-content: center;
   top: 0;
   z-index: 98;
   width: 100%;
   min-height: 60px;
-  margin: 0 auto;
   background-color: var(--topnav_background);
-  border: blue 1px solid;
 }
 
 .topnav {
-  display: flex;
   position: fixed;
+  display: flex;
   top: 0;
   z-index: 99;
   width: 1200px;
   min-height: 60px;
-  border: red 1px solid;
 }
 
 .topnav_left {
