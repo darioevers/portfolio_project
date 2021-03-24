@@ -42,6 +42,8 @@ body {
 
 .browsershort_sec {
   height: 450px;
+  background-image: url(/portfolio_project/images/01.jpg);
+  background-size: cover;
 }
 
 .browserright {
