@@ -31,6 +31,7 @@ body {
   right: 0px;
   background-color: transparent;
   color: white;
+  /* floating button fixed to screen */
 }
 
 .floatingMenu {
@@ -39,6 +40,7 @@ body {
   top: 200px;
   right: 40px;
   z-index: 99;
+  /* floating menu backbox */
 }
 
 .browser_floating {
@@ -48,6 +50,7 @@ body {
   background-color: #1e1e1edc;
   color: white;
   box-shadow: 2px 2px 10px #0f0f0f;
+  /* floating menu onclick displayed browser */
 }
 
 .browser_bar_floating {
@@ -58,6 +61,7 @@ body {
   border-bottom: black 1px solid;
   color: gray;
   padding-left: 25px;
+  /* floating menu onclick displayed browser bar */
 }
 
 /* ---------------FONTAWESOME ICONS--------------- */
@@ -115,6 +119,7 @@ h6 {
 .browser_content {
   display: flex;
   height: 90%;
+  /* flex box for header section (3 boxes) */
 }
 
 .contentleft {
@@ -123,24 +128,34 @@ h6 {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  /* left content of flex box (2boxes on top of each other) */
 }
 .contentright {
   width: 70%;
   align-items: center;
   margin: 0 auto;
+  /* right content of flex box (1 large box) */
+}
+
+.browserright {
+  margin-top: 5%;
+  height: 750px;
+  /* flex box settings right large flex box  */
 }
 
 .browsershort {
   height: 200px;
   margin-bottom: 30px;
+  /* first flex box left settings */
 }
 
 .browsershort_sec {
   height: 550px;
-  background-image: url(/portfolio_project/images/01.jpg);
-  /* background-image: url(./images/01.jpg); */
+  /* background-image: url(/portfolio_project/images/01.jpg); */
+  background-image: url(./images/01.jpg);
   background-size: cover;
   margin: 0 auto;
+  /* second flex box left settings */
 }
 
 .browsershort_sec_inside {
@@ -149,11 +164,13 @@ h6 {
   width: 300px;
   background-color: #1e1e1eb4;
   margin: 0 auto;
+  /* flex box settings inside second flex box left settings */
 }
 
 .browser_content_sec_inside {
   height: 90%;
   margin-top: 120px;
+  /* inside inside left sec flex box */
 }
 
 .browser_content_inside {
@@ -162,11 +179,7 @@ h6 {
   align-content: center;
   text-align: center;
   margin-top: 60px;
-}
-
-.browserright {
-  margin-top: 5%;
-  height: 750px;
+  /* inside inside left sec flex box */
 }
 
 .browser_bar {
