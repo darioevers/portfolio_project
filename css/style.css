@@ -278,7 +278,7 @@ a {
 .browser_bar_button_y {
   width: 12px;
   height: 12px;
-  ackground-color: var(--browser_bar_button_y);
+  background-color: var(--browser_bar_button_y);
   border-radius: 100px;
   margin-right: 5px;
 }
