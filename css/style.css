@@ -1,5 +1,9 @@
 /* ---------------PAGE CSS--------------- */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   background-color: var(--background);
@@ -121,6 +125,13 @@ h6 {
 a {
   text-decoration: none;
   color: white;
+}
+
+/* SPECIAL STATIC IMAGES/LOGOS */
+
+.topnav_left img {
+  height: 30px;
+  margin-top: 15px;
 }
 
 /* .topnav a,
