@@ -12,7 +12,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #141414;
+  background: #050505;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -23,10 +23,36 @@ body {
   background: rgb(98, 98, 98);
 }
 
+/* FLOATING OBJECTS */
+
+.floatingbutton {
+  position: fixed;
+  top: 200px;
+  right: 0px;
+  background-color: transparent;
+  color: white;
+}
+
 /* FONTAWESOME ICONS */
 
 .fa-cogs {
   font-size: 3em;
+  /* first browser icon */
+}
+
+.fa-address-book {
+  font-size: 2.4em;
+  color: #3a3a3a;
+  transition: 0.4s;
+  /* floating contact button icon */
+}
+
+.fa-address-book:hover {
+  font-size: 2.4em;
+  color: rgb(98, 98, 98);
+  transition: 0.4s;
+  cursor: pointer;
+  /* floating contact button icon */
 }
 
 /* FONTS 
