@@ -2,26 +2,28 @@
 
 body {
   margin: 0 auto;
-  background-color: rgb(255, 255, 255);
+  background-color: #141414;
 }
 
 /* BROWSER STYLE CSS */
 /* BROWSER STYLE WINDOWS CSS SETTINGS FOR MAIN BROWSER WINDOWS */
 
 .browser {
-  border-radius: 9px;
+  border-radius: 7px;
   height: 650px;
   width: 100%;
-  background-color: #1c1f20;
+  background-color: #1e1e1e;
   color: white;
 }
 
 .browser_bar {
   display: flex;
-  background-color: #343536;
+  background-color: #191919;
   height: 30px;
-  border-radius: 9px 9px 0px 0px;
+  border-radius: 7px 7px 0px 0px;
   width: 100%;
+  border-top: rgb(68, 68, 68) 1px solid;
+  border-bottom: black 1px solid;
 }
 
 .browser_bar_buttons {
@@ -33,27 +35,12 @@ body {
   align-items: center;
 }
 
-.browser_bar_button_one {
+.browser_bar_button {
   width: 12px;
   height: 12px;
-  background-color: gray;
+  background-color: #454545;
   border-radius: 100px;
   margin-right: 5px;
-}
-
-.browser_bar_button_two {
-  width: 12px;
-  height: 12px;
-  background-color: gray;
-  border-radius: 100px;
-  margin-right: 5px;
-}
-
-.browser_bar_button_thr {
-  width: 12px;
-  height: 12px;
-  background-color: gray;
-  border-radius: 100px;
 }
 
 /* HEADER SECTION */
@@ -61,13 +48,14 @@ body {
 
 .header_section {
   height: 100vh;
-  background: linear-gradient(
+  background-color: #141414;
+  /* background: linear-gradient(
       217deg,
       rgba(255, 0, 0, 0.8),
       rgba(255, 255, 255, 0) 70.71%
     ),
     linear-gradient(127deg, rgba(0, 140, 195, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(250, 111, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    linear-gradient(336deg, rgba(250, 111, 255, 0.8), rgba(0, 0, 255, 0) 70.71%); */
   /* header section background div */
 }
 
@@ -84,7 +72,7 @@ body {
   /* placeholder top of header section */
 }
 
-.header_section_placeholder_two {
+/* .header_section_placeholder_two {
   display: flex;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -95,8 +83,8 @@ body {
   width: 100%;
   height: 350px;
   margin-top: -350px;
-  /* white gradiant on top of header section gradiant */
-}
+  /* white gradiant on top of header section gradiant 
+} */
 
 /* PROJECTS SECTION */
 
