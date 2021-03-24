@@ -1,11 +1,11 @@
-/* PAGE CSS */
+/* ---------------PAGE CSS--------------- */
 
 body {
   margin: 0 auto;
   background-color: #141414;
 }
 
-/* SCROLL BAR */
+/* ---------------SCROLL BAR--------------- */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -23,7 +23,7 @@ body {
   background: rgb(98, 98, 98);
 }
 
-/* FLOATING OBJECTS */
+/* ---------------FLOATING OBJECTS--------------- */
 
 .floatingbutton {
   position: fixed;
@@ -60,7 +60,7 @@ body {
   padding-left: 25px;
 }
 
-/* FONTAWESOME ICONS */
+/* ---------------FONTAWESOME ICONS--------------- */
 
 .fa-cogs {
   font-size: 3em;
@@ -82,7 +82,7 @@ body {
   /* floating contact button icon */
 }
 
-/* FONTS 
+/* ---------------FONTS--------------- 
 font-family: "Roboto", sans-serif;  (ALL WEIGHTS)
 font-family: "Open Sans", sans-serif;  (REGULAR ONLY)
 */
@@ -100,7 +100,7 @@ h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-/* BROWSER STYLE CSS */
+/* ---------------BROWSER STYLE CSS--------------- */
 /* BROWSER STYLE WINDOWS CSS SETTINGS FOR MAIN BROWSER WINDOWS */
 
 .browser {
@@ -136,14 +136,37 @@ h6 {
 }
 
 .browsershort_sec {
-  height: 450px;
-  /* background-image: url(/portfolio_project/images/01.jpg); */
-  background-image: url(./images/01.jpg);
+  height: 550px;
+  background-image: url(/portfolio_project/images/01.jpg);
+  /* background-image: url(./images/01.jpg); */
   background-size: cover;
+  margin: 0 auto;
+}
+
+.browsershort_sec_inside {
+  margin-top: 220px;
+  height: 200px;
+  width: 300px;
+  background-color: #1e1e1eb4;
+  margin: 0 auto;
+}
+
+.browser_content_sec_inside {
+  height: 90%;
+  margin-top: 120px;
+}
+
+.browser_content_inside {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-top: 60px;
 }
 
 .browserright {
   margin-top: 5%;
+  height: 750px;
 }
 
 .browser_bar {
@@ -155,6 +178,8 @@ h6 {
   border-top: rgb(47, 47, 47) 1px solid;
   border-bottom: black 1px solid;
 }
+
+/* BUTTONS */
 
 .browser_bar_buttons {
   display: flex;
@@ -173,7 +198,23 @@ h6 {
   margin-right: 5px;
 }
 
-/* HEADER SECTION */
+.browser_bar_button_y {
+  width: 12px;
+  height: 12px;
+  background-color: #e5bf29;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+.browser_bar_button_r {
+  width: 12px;
+  height: 12px;
+  background-color: #53c22b;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+/* ---------------HEADER SECTION--------------- */
 /* HEADER SIZE, BACKGROUND, GRADIANT, SPAZING */
 
 .header_section {
@@ -205,7 +246,7 @@ h6 {
   /* placeholder top of header section */
 }
 
-/* PROJECTS SECTION */
+/* ---------------PROJECTS SECTION--------------- */
 
 .projects_section_content {
   position: relative;
