@@ -25,6 +25,11 @@ body {
   background-color: var(--background);
 }
 
+:target::before {
+  margin-top: -60px 0 0; /* negative fixed header height */
+  /* fixes anchor scrolling position */
+}
+
 /* ---------------SCROLL BAR--------------- */
 
 ::-webkit-scrollbar {
@@ -82,6 +87,13 @@ body {
   color: gray;
   padding-left: 25px;
   /* floating menu onclick displayed browser bar */
+}
+
+span.anchor {
+  display: block;
+  position: relative;
+  top: -90px;
+  visibility: hidden;
 }
 
 /* ---------------FONTAWESOME ICONS--------------- */
