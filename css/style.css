@@ -1,14 +1,5 @@
 /* ---------------PAGE CSS--------------- */
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0 auto;
-  background-color: var(--background);
-}
-
 :root {
   --background: #141414;
   --button: #2f2e2e;
@@ -23,6 +14,15 @@ body {
   --browser-bar-border-bottom: black;
   --topnav_background: #1d1d1dea;
   --browsershort_second_inside: #1e1e1eb4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background-color: var(--background);
 }
 
 /* ---------------SCROLL BAR--------------- */
@@ -134,6 +134,11 @@ a {
 .topnav_left img {
   height: 30px;
   margin-top: 15px;
+  /* LOGO */
+}
+
+.browser_content_inside img {
+  height: 60px;
 }
 
 /* .topnav a,
@@ -252,8 +257,8 @@ a {
 
 .browsershort_sec {
   height: 550px;
-  background-image: url(/portfolio_project/images/01.jpg);
-  /* background-image: url(./images/01.jpg); */
+  /* background-image: url(/portfolio_project/images/01.jpg); */
+  background-image: url(./images/01.jpg);
   background-size: cover;
   margin: 0 auto;
   /* second flex box left settings */
@@ -279,7 +284,7 @@ a {
   align-items: center;
   align-content: center;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 50px;
   /* inside inside left sec flex box */
 }
 
