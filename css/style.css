@@ -468,6 +468,14 @@ a {
   display: none;
 }
 
+.exp_company {
+  margin-top: 5px;
+  font-weight: 400;
+  color: gray;
+}
+.exp_titlejob {
+}
+
 /* ---------------PROJECTS SECTION--------------- */
 
 .projects_section {
@@ -568,7 +576,7 @@ a {
 /* ---------------CONTACT SECTION--------------- */
 
 .contact_section {
-  height: 350px;
+  height: 450px;
 }
 
 .contactbrowser {
@@ -585,11 +593,11 @@ a {
 /* ---------------FOOTER SECTION--------------- */
 
 .footer_section {
-  height: 200px;
+  height: 100px;
 }
 
 .footerbrowser {
-  height: 200px;
+  height: 100px;
 }
 
 /* .footer_section_content {
