@@ -404,10 +404,58 @@ a {
 .browser_content_skills_left {
   width: 30%;
   background-color: var(--browser_bar_background);
+  padding-top: 10px;
+}
+
+.browser_content_skills_title {
+  margin-left: 20px;
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.browser_content_skills_left_switch {
+  padding: 5px 50px;
+  transition: 0.3s;
+}
+
+.browser_content_skills_left_switch:hover {
+  background-color: rgb(63, 63, 63);
+  transition: 0.3s;
 }
 
 .browser_content_skills_right {
   width: 70%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . ."
+    ". . . . ."
+    ". . . . .";
+}
+
+.grid-content {
+  height: 166px;
+  width: 107px;
+  padding: 30px 20px 10px;
+  margin: 0 auto;
+  text-align: center;
+  transition: 0.3s;
+  /* border: red 1px solid; */
+}
+
+.grid-content:hover {
+  background-color: rgb(63, 63, 63);
+  transition: 0.3s;
+}
+
+.grid-content img {
+  height: 80px;
 }
 
 /* ---------------PROJECTS SECTION--------------- */
@@ -425,6 +473,32 @@ a {
   margin: 0 auto;
   width: 1200px;
   z-index: 90;
+}
+
+.projectsnoflex {
+  display: block;
+  /* display projects content block-wise */
+}
+
+.projects_top_content {
+  height: 20%;
+  padding: 10px 40px 10px 40px;
+  border: gray 1px solid;
+  /* title and description of projects browser window */
+}
+
+.browser_content_projects_flex {
+  display: flex;
+  border: gray 1px solid;
+  height: 35%;
+  /* flex box for single project box */
+}
+
+.projects_flex_inside {
+  border: 1px solid red;
+  display: flex;
+  margin: 0px 20px;
+  /* flex box inside single project box */
 }
 
 /* ---------------PROGRESS SECTION--------------- */
