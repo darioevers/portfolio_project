@@ -258,7 +258,7 @@ a {
 
 .browserright {
   margin-top: 5%;
-  height: 750px;
+  height: 680px;
   /* flex box settings right large flex box  */
 }
 
@@ -269,7 +269,7 @@ a {
 }
 
 .browsershort_sec {
-  height: 550px;
+  height: 480px;
   background-image: url(/portfolio_project/images/01.jpg);
   /* background-image: url(./images/01.jpg); */
   background-size: cover;
@@ -361,7 +361,7 @@ a {
 /* HEADER SIZE, BACKGROUND, GRADIANT, SPAZING */
 
 .header_section {
-  height: 850px;
+  height: 790px;
   background-color: var(--background);
 }
 
@@ -376,12 +376,12 @@ a {
 }
 
 .header_section_content_left {
-  margin-right: 5%;
-  width: 65%;
+  margin-right: 2%;
+  width: 66%;
 }
 
 .header_section_content_right {
-  width: 30%;
+  width: 32%;
 }
 
 .header_section_placeholder {
