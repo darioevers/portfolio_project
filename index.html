@@ -117,16 +117,17 @@
           <div class="browser_content">
             <div class="browser_content_skills_left">
               <div class="browser_content_skills_title"><p>Exertise</p></div>
-              <div class="browser_content_skills_left_switch">Tools</div>
-              <div class="browser_content_skills_left_switch">Experience</div>
+              <div onclick="skills_switch_tools()" class="browser_content_skills_left_switch active" id="skill_switch_tools">Tools</div>
+              <div onclick="skills_switch_exp()" class="browser_content_skills_left_switch" id="skills_switch_exp">Experience</div>
             </div>
             <div class="browser_content_skills_right">
+              <div class="skills_tools" id="skills_tools">
               <div class="grid-container">
                 <div class="grid-content"><img src="./images/htmlcssjs.png"><p>HTML, CSS, JS</p></div>
                 <div class="grid-content"><img src="./images/github.png"><p>GitHub</p></div>
                 <div class="grid-content"><img src="./images/trello.png"><p>Trello</p></div>
-                <div class="grid-content"><img src="./images/poeditor.png"><p>PoEditor</p></div>
                 <div class="grid-content"><img src="./images/digitalocean.svg"><p>Digital Ocean</p></div>
+                <div class="grid-content"><img src="./images/poeditor.png"><p>PoEditor</p></div>
                 <div class="grid-content"><img src="./images/photoshop.svg"><p>Photoshop</p></div>
                 <div class="grid-content"><img src="./images/adobe-illustrator.svg"><p>Illustrator</p></div>
                 <div class="grid-content"><img src="./images/indesign.svg"><p>InDesign</p></div>
@@ -138,6 +139,14 @@
                 <div class="grid-content"><img src="./images/googleads.png"><p>Google Ads</p></div>
                 <div class="grid-content"><img src="./images/googleanalytics.png"><p>Google Analytics</p></div>
               </div>
+            </div>
+            <div class="skills_exp" id="skills_exp">
+              <div class="grid-container">
+                <div class="grid-content"><img src="./images/htmlcssjs.png"><p>VP Operations</p></div>
+                <div class="grid-content"><img src="./images/github.png"><p>Business Dev</p></div>
+                <div class="grid-content"><img src="./images/trello.png"><p>Global Head of Support</p></div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -298,6 +307,36 @@
         x.style.display = "none";
       } else {
         x.style.display = "block";
+      }
+    }
+  </script>
+  <script>
+    function skills_switch_tools() {
+      var x = document.getElementById("skills_tools");
+      var y = document.getElementById("skills_exp");
+      var a = document.getElementById("skills_switch_tools");
+      var b = document.getElementById("skills_switch_exp");
+      if (x.style.display === "block") {
+      } else {
+        // b.style.backgroundColor = "rgb(47, 47, 47)";
+        // a.style.backgroundColor = "transparent";
+        y.style.display = "none";
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <script>
+    function skills_switch_exp() {
+      var x = document.getElementById("skills_tools");
+      var y = document.getElementById("skills_exp");
+      var a = document.getElementById("skills_switch_tools");
+      var b = document.getElementById("skills_switch_exp");
+      if (y.style.display === "block") {
+      } else {
+        // a.style.backgroundColor = "rgb(47, 47, 47)";
+        // b.style.backgroundColor = "transparent";
+        x.style.display = "none";
+        y.style.display = "block";
       }
     }
   </script>

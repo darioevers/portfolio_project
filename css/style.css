@@ -265,8 +265,8 @@ a {
 
 .browsershort_sec {
   height: 550px;
-  /* background-image: url(/portfolio_project/images/01.jpg); */
-  background-image: url(./images/01.jpg);
+  background-image: url(/portfolio_project/images/01.jpg);
+  /* background-image: url(./images/01.jpg); */
   background-size: cover;
   margin: 0 auto;
   /* second flex box left settings */
@@ -417,10 +417,12 @@ a {
 .browser_content_skills_left_switch {
   padding: 5px 50px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
+.active,
 .browser_content_skills_left_switch:hover {
-  background-color: rgb(63, 63, 63);
+  background-color: rgb(47, 47, 47);
   transition: 0.3s;
 }
 
@@ -456,6 +458,14 @@ a {
 
 .grid-content img {
   height: 80px;
+}
+
+.skills_tools {
+  display: block;
+}
+
+.skills_exp {
+  display: none;
 }
 
 /* ---------------PROJECTS SECTION--------------- */
