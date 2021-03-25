@@ -457,7 +457,7 @@ a {
 }
 
 .grid-content img {
-  height: 80px;
+  height: 65px;
 }
 
 .skills_tools {
@@ -543,6 +543,26 @@ a {
   margin: 0 auto;
   width: 950px;
   z-index: 90;
+}
+
+.aboutcontent {
+  display: flex;
+}
+
+.about_left {
+  width: 60%;
+  padding: 30px;
+  text-align: justify;
+}
+
+.about_right {
+  width: 35%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.about_right img {
+  height: 250px;
 }
 
 /* ---------------CONTACT SECTION--------------- */
