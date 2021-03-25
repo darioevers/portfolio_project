@@ -25,6 +25,14 @@ body {
   background-color: var(--background);
 }
 
+:target::before {
+  content: "";
+  display: block;
+  height: 60px; /* fixed header height*/
+  margin: -60px 0 0; /* negative fixed header height */
+  /* fixes anchor scrolling position */
+}
+
 /* ---------------SCROLL BAR--------------- */
 
 ::-webkit-scrollbar {
@@ -224,7 +232,7 @@ a {
 
 .browser_content {
   display: flex;
-  height: 90%;
+  height: 95%;
   /* flex box for header section (3 boxes) */
 }
 
@@ -296,6 +304,7 @@ a {
   width: 100%;
   border-top: var(--browser-bar-border-top) 1px solid;
   border-bottom: var(--browser-bar-border-bottom) 1px solid;
+  align-items: center;
 }
 
 .nobuttons {
@@ -303,6 +312,9 @@ a {
   align-items: center;
   color: var(--browser_bar_buttons_background);
   font-size: 90%;
+  min-width: 90%;
+  text-align: center;
+  /* browser tab text either NO BUTTON BROWSER or NEXT BUTTON BROWSER */
 }
 
 /* BUTTONS */
@@ -344,7 +356,7 @@ a {
 /* HEADER SIZE, BACKGROUND, GRADIANT, SPAZING */
 
 .header_section {
-  height: 100vh;
+  height: 850px;
   background-color: var(--background);
 }
 
@@ -372,11 +384,113 @@ a {
   /* placeholder top of header section */
 }
 
+/* ---------------SKILLS SECTION--------------- */
+
+.skills_section {
+  height: 770px;
+}
+
+.skillsbrowser {
+  height: 650px;
+}
+
+.skills_section_content {
+  position: relative;
+  margin: 0 auto;
+  width: 1050px;
+  z-index: 90;
+}
+
+.browser_content_skills_left {
+  width: 30%;
+  background-color: var(--browser_bar_background);
+}
+
+.browser_content_skills_right {
+  width: 70%;
+}
+
 /* ---------------PROJECTS SECTION--------------- */
+
+.projects_section {
+  height: 680px;
+}
+
+.projectsbrowser {
+  height: 600px;
+}
 
 .projects_section_content {
   position: relative;
   margin: 0 auto;
-  width: 700px;
-  z-index: 99;
+  width: 1200px;
+  z-index: 90;
 }
+
+/* ---------------PROGRESS SECTION--------------- */
+
+.progress_section {
+  height: 350px;
+}
+
+.progressbrowser {
+  height: 250px;
+}
+
+.progress_section_content {
+  position: relative;
+  margin: 0 auto;
+  width: 1050px;
+  z-index: 90;
+}
+
+/* ---------------ABOUT SECTION--------------- */
+
+.about_section {
+  height: 530px;
+}
+
+.aboutbrowser {
+  height: 430px;
+}
+
+.about_section_content {
+  position: relative;
+  margin: 0 auto;
+  width: 950px;
+  z-index: 90;
+}
+
+/* ---------------CONTACT SECTION--------------- */
+
+.contact_section {
+  height: 350px;
+}
+
+.contactbrowser {
+  height: 400px;
+}
+
+.contact_section_content {
+  position: relative;
+  margin: 0 auto;
+  width: 650px;
+  z-index: 90;
+}
+
+/* ---------------FOOTER SECTION--------------- */
+
+.footer_section {
+  height: 200px;
+}
+
+.footerbrowser {
+  height: 200px;
+}
+
+/* .footer_section_content {
+  position: relative;
+  margin: 0 auto;
+  width: 650px;
+  z-index: 90;
+} */
