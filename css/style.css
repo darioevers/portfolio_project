@@ -92,8 +92,9 @@ body {
 span.anchor {
   display: block;
   position: relative;
-  top: -90px;
+  top: -100px;
   visibility: hidden;
+  /* anchers moved up 100px because the nav lays over the body */
 }
 
 /* ---------------FONTAWESOME ICONS--------------- */
