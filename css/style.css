@@ -241,6 +241,10 @@ a {
   /* flex box for header section (3 boxes) */
 }
 
+.noflex {
+  display: block;
+}
+
 .contentleft {
   width: 20%;
   margin-right: 10%;
@@ -257,8 +261,8 @@ a {
 }
 
 .browserright {
-  margin-top: 5%;
-  height: 680px;
+  margin-top: 10%;
+  height: 630px;
   /* flex box settings right large flex box  */
 }
 
@@ -389,6 +393,42 @@ a {
   /* placeholder top of header section */
 }
 
+.browserright_inside {
+  display: flex;
+  width: 100%;
+  margin: 2% 0%;
+  height: 18%;
+}
+
+.browserright_inside_left {
+  width: 35%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 8%;
+}
+
+.browserright_inside_left img {
+  height: 65px;
+}
+
+.browserright_inside_right {
+  width: 65%;
+  height: 100%;
+  border-bottom: rgb(51, 51, 51) 1px solid;
+  margin-right: 40px;
+  margin-top: 3%;
+}
+
+.browserright_inside_right h3 {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.noborder {
+  border: none;
+}
+
 /* ---------------SKILLS SECTION--------------- */
 
 .skills_section {
@@ -420,14 +460,15 @@ a {
 }
 
 .browser_content_skills_left_switch {
-  padding: 5px 50px;
+  padding: 8px 50px;
   transition: 0.3s;
+  font-size: 92%;
   cursor: pointer;
 }
 
 .active,
 .browser_content_skills_left_switch:hover {
-  background-color: rgb(47, 47, 47);
+  background-color: rgb(41, 41, 41);
   transition: 0.3s;
 }
 
