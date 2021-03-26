@@ -30,9 +30,17 @@ body {
   /* fixes anchor scrolling position */
 }
 
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+  /* removes outlines from above specified objects */
+}
+
 /* SPECIAL PAGE ANIMATIONS */
 
-#animatedText {
+/* #animatedText {
   -webkit-animation-name: coloredText;
   -webkit-animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -55,6 +63,36 @@ body {
   25%,
   45% {
     text-shadow: -2px -5px 10px #fb0017, -5px 0px 10px #3a00cd,
+      -5px 5px 10px #ffe600;
+  }
+  35%,
+  65% {
+  }
+} */
+
+#animatedBox {
+  -webkit-animation-name: coloredBox;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+}
+@-webkit-keyframes coloredBox {
+  0% {
+  }
+  5%,
+  25% {
+    box-shadow: -2px -5px 10px #fb0017, -5px 0px 10px #3a00cd,
+      -5px 5px 10px #00ff3a;
+  }
+  15%,
+  35% {
+    box-shadow: 2px 5px 10px #fb0017, 5px 0px 10px #3a00cd,
+      5px -5px 10px #006eff;
+  }
+  25%,
+  45% {
+    box-shadow: -2px -5px 10px #fb0017, -5px 0px 10px #3a00cd,
       -5px 5px 10px #ffe600;
   }
   35%,
@@ -295,7 +333,7 @@ a {
 
 .browserright {
   margin-top: 10%;
-  height: 630px;
+  height: 650px;
   /* flex box settings right large flex box  */
 }
 
@@ -333,12 +371,14 @@ a {
   width: 20%;
   text-align: center;
   margin: 10px 30px;
+  font-weight: 100;
   /* inside first flex box content */
 }
 
 .browsershort_bottom_section .fas {
-  font-size: 2em;
+  font-size: 2.6em;
   margin-top: 10px;
+  color: rgb(209, 209, 209);
 }
 
 .browsershort_sec {
@@ -466,7 +506,29 @@ a {
   display: flex;
   width: 100%;
   margin: 2% 0%;
-  height: 18%;
+  height: 15%;
+}
+
+.browserright_inside button {
+  border: red 1px solid;
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #cf2b1e;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.browserright_inside button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.rightbutton {
+  margin: 0 auto;
+  margin-top: 15px;
 }
 
 .browserright_inside_left {
