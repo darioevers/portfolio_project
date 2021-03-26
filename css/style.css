@@ -206,7 +206,7 @@ a {
 .nav_link {
   color: rgb(179, 179, 179);
   width: 150px;
-  height: 30px;
+  height: 25px;
   text-align: center;
   margin-left: 20px;
   background-color: var(--button);
@@ -214,6 +214,7 @@ a {
   border-top: var(--browser-bar-border-top) 1px solid;
   border-bottom: var(--browser-bar-border-bottom) 1px solid;
   transition: 0.4s;
+  padding-top: 4px;
 }
 
 .nav_link:hover {
@@ -403,13 +404,13 @@ a {
 .browserright_inside_left {
   width: 35%;
   height: 100%;
-  margin: 0 auto;
   text-align: center;
-  margin-top: 8%;
+  align-items: center;
 }
 
 .browserright_inside_left img {
   height: 65px;
+  margin-top: 20px;
 }
 
 .browserright_inside_right {
@@ -417,7 +418,10 @@ a {
   height: 100%;
   border-bottom: rgb(51, 51, 51) 1px solid;
   margin-right: 40px;
-  margin-top: 3%;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .browserright_inside_right h3 {
