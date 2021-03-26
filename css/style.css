@@ -511,14 +511,13 @@ a {
 }
 
 .browser_content_projects_flex {
-  display: flex;
+  display: none;
   border: gray 1px solid;
   height: 35%;
   /* flex box for single project box */
 }
 
 .projects_flex_inside {
-  border: 1px solid red;
   display: flex;
   margin: 0px 20px;
   /* flex box inside single project box */
