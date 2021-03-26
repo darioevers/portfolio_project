@@ -30,6 +30,38 @@ body {
   /* fixes anchor scrolling position */
 }
 
+/* SPECIAL PAGE ANIMATIONS */
+
+#animatedText {
+  -webkit-animation-name: coloredText;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+}
+@-webkit-keyframes coloredText {
+  0% {
+  }
+  5%,
+  25% {
+    text-shadow: -2px -5px 10px #fb0017, -5px 0px 10px #3a00cd,
+      -5px 5px 10px #00ff3a;
+  }
+  15%,
+  35% {
+    text-shadow: 2px 5px 10px #fb0017, 5px 0px 10px #3a00cd,
+      5px -5px 10px #006eff;
+  }
+  25%,
+  45% {
+    text-shadow: -2px -5px 10px #fb0017, -5px 0px 10px #3a00cd,
+      -5px 5px 10px #ffe600;
+  }
+  35%,
+  65% {
+  }
+}
+
 /* ---------------SCROLL BAR--------------- */
 
 ::-webkit-scrollbar {
@@ -268,9 +300,45 @@ a {
 }
 
 .browsershort {
-  height: 200px;
+  height: 240px;
   margin-bottom: 30px;
   /* first flex box left settings */
+}
+
+.browsershort_top {
+  margin-left: 30px;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-weight: 800;
+  /* first flex box left content */
+}
+
+.dot_style {
+  color: red;
+  font-size: 1.5em;
+  line-height: 60px;
+  /* span dot style red */
+}
+
+.browsershort_bottom {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  height: 55%;
+  /*  first flex box left content */
+}
+
+.browsershort_bottom_section {
+  width: 20%;
+  text-align: center;
+  margin: 10px 30px;
+  /* inside first flex box content */
+}
+
+.browsershort_bottom_section .fas {
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 .browsershort_sec {
