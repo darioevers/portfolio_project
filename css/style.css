@@ -640,6 +640,11 @@ a {
   height: 65px;
 }
 
+.graybg {
+  background-color: rgb(42, 42, 42);
+  cursor: pointer;
+}
+
 .skills_tools {
   display: block;
 }
@@ -653,6 +658,13 @@ a {
   font-weight: 400;
   color: gray;
 }
+
+.exp_company_white {
+  margin-top: 5px;
+  font-weight: 400;
+  color: white;
+}
+
 .exp_titlejob {
 }
 
