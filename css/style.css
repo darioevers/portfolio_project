@@ -688,7 +688,7 @@ a {
 }
 
 .graybg img {
-  height: 45px;
+  height: 65px;
 }
 
 .biggrid {
@@ -875,6 +875,7 @@ a {
   width: 100%;
   color: white;
   padding-left: 20px;
+  font-size: 20px;
 }
 
 .email__contact {
@@ -885,6 +886,7 @@ a {
   width: 100%;
   color: white;
   padding-left: 20px;
+  font-size: 20px;
 }
 
 .yourmessage__contact {
@@ -894,12 +896,15 @@ a {
   height: 100px;
   width: 100%;
   max-width: 100%;
-  min-width: 80%;
-  height: 100px;
-  max-height: 140px;
-  min-height: 100px;
+  min-width: 100%;
+  height: 110px;
+  max-height: 110px;
+  min-height: 110px;
   color: white;
   padding-left: 20px;
+  resize: none;
+  padding-top: 10px;
+  font-size: 20px;
 }
 
 .submitbutton__contact {
