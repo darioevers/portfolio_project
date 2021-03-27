@@ -597,6 +597,7 @@ a {
   padding: 8px 50px;
   transition: 0.3s;
   font-size: 92%;
+  line-height: 22px;
   cursor: pointer;
 }
 
@@ -664,6 +665,7 @@ a {
   width: 89%;
   height: 200px;
   transition: 0.8s;
+  cursor: pointer;
 }
 
 .grid-content_projects:hover {
