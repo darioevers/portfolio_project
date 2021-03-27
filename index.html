@@ -32,8 +32,8 @@
       </div>
       <div class="topnav_right">
         <div class="nav_links">
-          <a href="#skills"><div class="nav_link">Skills</div></a>
-          <a href="#projects"><div class="nav_link">Projects</div></a>
+          <a href="#skills"><div class="nav_link">Expertise</div></a>
+          <!-- <a href="#projects"><div class="nav_link">Projects</div></a> -->
             <a href="#about"><div class="nav_link">About</div></a>
               <a href="#contact"><div class="nav_link">Contact</div></a>
       </div>
@@ -161,9 +161,10 @@
           </div>
           <div class="browser_content">
             <div class="browser_content_skills_left">
-              <div class="browser_content_skills_title"><p>Exertise</p></div>
-              <div onclick="skills_switch_tools()" class="browser_content_skills_left_switch active" id="skill_switch_tools"></i></i>Tools</div>
-              <div onclick="skills_switch_exp()" class="browser_content_skills_left_switch" id="skills_switch_exp">Experience</div>
+              <div class="browser_content_skills_title"><p>Expertise</p></div>
+              <div onclick="skills_switch_tools()" class="browser_content_skills_left_switch active" id="skills_switch_tools"><img src="./images/large-red-circle_1f534.png"> Tools</div>
+              <div onclick="skills_switch_exp()" class="browser_content_skills_left_switch" id="skills_switch_exp"><img src="./images/large-blue-circle_1f535.png"> Experience</div>
+              <div onclick="skills_switch_projects()" class="browser_content_skills_left_switch" id="skills_switch_projects"><img src="./images/large-yellow-circle_1f7e1.png"> Projects</div>
             </div>
             <div class="browser_content_skills_right">
               <div class="skills_tools" id="skills_tools">
@@ -199,13 +200,22 @@
                 <a href="https://www.linkedin.com/in/dario-n-evers/" target="_blank"><div class="grid-content graybg"><img src="./images/linkedin.png"><h5 class="exp_company_white">dario-n-evers</h5><p class="exp_titlejob">Check my profile</p></div></a>
               </div>
             </div>
+            <div class="skills_projects" id="skills_projects">
+              <div class="grid-container_projects">
+                <div class="grid-content_projects"><img src="./images/youtubeclone_preview.png"><h5 class="exp_company">Learning purpose</h5><p class="exp_titlejob">YouTube Clone</p></div>
+                <div class="grid-content_projects"><img src="./images/mmmadame_preview.png" id="mmmadame_pic"><h5 class="exp_company">E-Commerce Shop</h5><p class="exp_titlejob">MM Madame</p></div>
+                <div class="grid-content_projects"><img src="./images/onepager_preview.png"><h5 class="exp_company">Learning purpose</h5><p class="exp_titlejob">Singlepager</p></div>
+                <div class="grid-content_projects"><img src="./images/jspassgenerator_preview.png"><h5 class="exp_company">Learning purpose</h5><p class="exp_titlejob">JS Pass Generator</p></div>
+              </div>
+              <a href="https://github.com/darioevers" target="_blank"><div class="grid-content_projects graybg biggrid"><img src="./images/github.png"><h5 class="exp_company_white">darioevers</h5></div></a>
+            </div>
             </div>
           </div>
         </div>
       </main>
     </main>
 <!-- ---------------PROJECTS BROWSER BOX START--------------- -->
-<span  id="projects" class="anchor"></span>
+<!-- <span  id="projects" class="anchor"></span>
 <main class="projects_section">
           <main class="projects_section_content">
             <div class="browser projectsbrowser">
@@ -272,9 +282,10 @@
               </div>
             </div>
           </main>
-        </main>
+        </main> -->
 <!-- ---------------PROGRESS BROWSER BOX START--------------- -->
-         <main class="progress_section" id="progress">
+<!-- POSTPONED SECTION -->
+         <!-- <main class="progress_section" id="progress">
           <main class="progress_section_content">
             <div class="browser progressbrowser">
               <div class="browser_bar">
@@ -291,7 +302,7 @@
               </div>
             </div>
           </main>
-        </main>   
+        </main>    -->
 <!-- ---------------ABOUT BROWSER BOX START--------------- -->
 <span  id="about" class="anchor"></span>         
 <main class="about_section">
@@ -397,14 +408,20 @@
     function skills_switch_tools() {
       var x = document.getElementById("skills_tools");
       var y = document.getElementById("skills_exp");
+      var z = document.getElementById("skills_projects");
       var a = document.getElementById("skills_switch_tools");
       var b = document.getElementById("skills_switch_exp");
+      var c = document.getElementById("skills_switch_projects");
       if (x.style.display === "block") {
       } else {
         // b.style.backgroundColor = "rgb(47, 47, 47)";
         // a.style.backgroundColor = "transparent";
         y.style.display = "none";
+        b.className = "browser_content_skills_left_switch";
+        z.style.display = "none";
+        c.className = "browser_content_skills_left_switch";
         x.style.display = "block";
+        a.className = "browser_content_skills_left_switch active";
       }
     }
   </script>
@@ -412,15 +429,52 @@
     function skills_switch_exp() {
       var x = document.getElementById("skills_tools");
       var y = document.getElementById("skills_exp");
+      var z = document.getElementById("skills_projects");
       var a = document.getElementById("skills_switch_tools");
       var b = document.getElementById("skills_switch_exp");
+      var c = document.getElementById("skills_switch_projects");
       if (y.style.display === "block") {
       } else {
         // a.style.backgroundColor = "rgb(47, 47, 47)";
         // b.style.backgroundColor = "transparent";
         x.style.display = "none";
+        a.className = "browser_content_skills_left_switch";
+        z.style.display = "none";
+        c.className = "browser_content_skills_left_switch";
         y.style.display = "block";
+        b.className = "browser_content_skills_left_switch active";
       }
     }
   </script>
+  <script>
+    function skills_switch_projects() {
+      var x = document.getElementById("skills_tools");
+      var y = document.getElementById("skills_exp");
+      var z = document.getElementById("skills_projects");
+      var a = document.getElementById("skills_switch_tools");
+      var b = document.getElementById("skills_switch_exp");
+      var c = document.getElementById("skills_switch_projects");
+      if (z.style.display === "block") {
+      } else {
+        // a.style.backgroundColor = "rgb(47, 47, 47)";
+        // b.style.backgroundColor = "transparent";
+        x.style.display = "none";
+        a.className = "browser_content_skills_left_switch";
+        y.style.display = "none";
+        b.className = "browser_content_skills_left_switch";
+        z.style.display = "block";
+        c.className = "browser_content_skills_left_switch active";
+      }
+    }
+  </script>
+  <!-- <script>
+    var skillswitches = document.querySelectorAll(".browser_content_skils_left_switch");
+    Array.from(skillswitches).forEach(item => {
+       item.addEventListener("click", () => {
+          var selected = document.getElementsByClassName("active");
+          selected[0].className = selected[0].className.replace(" active", "");
+          item.className += " active";
+       });
+    });
+ </script> -->
 </html>
