@@ -771,7 +771,7 @@ a {
 }
 
 .contactbrowser {
-  height: 400px;
+  height: 380px;
 }
 
 .contact_section_content {
@@ -779,6 +779,92 @@ a {
   margin: 0 auto;
   width: 650px;
   z-index: 90;
+}
+
+.contactbox {
+  height: 80%;
+  width: 75%;
+  margin: 4% auto;
+}
+
+.contactboxinside {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.contactboxone {
+  height: 15%;
+}
+
+.contactboxtwo {
+  height: 15%;
+}
+
+.contactboxthr {
+  height: 50%;
+}
+
+.contactboxfou {
+  height: 20%;
+  margin-top: -10px;
+}
+
+.name__contact {
+  background-color: #2f2e2e;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+  color: white;
+  padding-left: 20px;
+}
+
+.email__contact {
+  background-color: #2f2e2e;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+  color: white;
+  padding-left: 20px;
+}
+
+.yourmessage__contact {
+  background-color: #2f2e2e;
+  border: none;
+  border-radius: 5px;
+  height: 100px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 80%;
+  height: 100px;
+  max-height: 140px;
+  min-height: 100px;
+  color: white;
+  padding-left: 20px;
+}
+
+.submitbutton__contact {
+  background-color: #326dd7;
+  border: none;
+  border-radius: 2px;
+  height: 45px;
+  width: 165px;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.submitbutton__contact:hover {
+  background-color: #1f4fa8;
+  transition: 0.5s;
+}
+
+.label {
+  width: 50px;
+  border: red 1px solid;
 }
 
 /* ---------------FOOTER SECTION--------------- */

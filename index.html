@@ -11,6 +11,7 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/e6bb2b1e79.js"
@@ -333,9 +334,30 @@
                   contact
                 </div>
               </div>
+
+
               <div class="browser_content">
-              </div>
-            </div>
+                <div class="contactbox">
+                  <div class="contactboxinside contactboxone">
+                    <form>
+                      <input type="text" name="name" id="name" class="name__contact" required style="font-size: 20px;" placeholder="Name">
+                      </form>
+                  </div>
+                  <div class="contactboxinside contactboxtwo">
+                    <form>
+                    <input type="mail" name="email" id="email" required class="email__contact" style="font-size: 20px;" placeholder="Email">
+                  </form>
+                  </div>
+                  <div class="contactboxinside contactboxthr">
+                    <form>
+                    <textarea id="tm" name="message" class="yourmessage__contact" rows="4" cols="50" required placeholder=""></textarea>
+                  </form>
+                  </div>
+                  <div class="contactboxinside contactboxfou">
+                    <input type="submit" value="Send" class="submitbutton__contact">
+                  </div>
+                </div>
+            
           </main>
         </main> 
 <!-- ---------------FOOTER START--------------- -->
