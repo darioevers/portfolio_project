@@ -120,6 +120,10 @@ button:focus {
 
 /* ---------------FLOATING OBJECTS--------------- */
 
+.floating_mobile_menu {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .floatingbutton {
     position: fixed;
@@ -951,7 +955,7 @@ a {
 
 @media (max-width: 375px) {
   .header_section {
-    /* height: 790px; */
+    height: 1200px;
     background-color: var(--background);
     margin-left: 5%;
     width: 100vw;
@@ -972,7 +976,7 @@ a {
     display: flex;
     top: 0;
     z-index: 99;
-    width: 100vw;
+    width: 90vw;
     height: 60px;
   }
 
@@ -987,6 +991,10 @@ a {
     background-color: var(--topnav_background);
   }
 
+  .nav_links {
+    display: none;
+  }
+
   .browser {
     display: inline-block;
     border-radius: 7px;
@@ -995,6 +1003,13 @@ a {
     background-color: var(--browser_background);
     color: white;
     box-shadow: 2px 2px 10px var(--browser_box_shadow);
+  }
+
+  .browserright {
+    margin-top: 10%;
+    height: 650px;
+    margin-bottom: 20px;
+    /* flex box settings right large flex box  */
   }
 
   .browsershort {
@@ -1008,7 +1023,7 @@ a {
   }
 
   .browsershort_sec {
-    height: 50vh;
+    height: 30vh;
     background-image: url(/portfolio_project/images/01.jpg);
     /* background-image: url(./images/01.jpg); */
     background-size: cover;
@@ -1017,17 +1032,32 @@ a {
   }
 
   .browsershort_sec_inside {
-    height: 200px;
+    margin-top: -80px;
+    height: 120px;
     width: 60%;
     background-color: var(--browsershort_second_inside);
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* flex box settings inside second flex box left settings */
+  }
+
+  .browsershort_sec_inside img {
+    height: 45px;
+    margin-top: 20px;
   }
 
   .browsershort_bottom_section .fas {
     font-size: 2em;
     margin-top: 5px;
     color: rgb(209, 209, 209);
+  }
+
+  .browser_content_inside {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 0px;
+    /* inside inside left sec flex box */
   }
 
   .browserright {
@@ -1044,5 +1074,32 @@ a {
     width: 100%;
     z-index: 90;
     /* header section content */
+  }
+
+  .skills_section {
+    height: 770px;
+    width: 90vw;
+  }
+
+  .skillsbrowser {
+    height: 650px;
+    margin-left: 2%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". .";
   }
 }
