@@ -120,51 +120,53 @@ button:focus {
 
 /* ---------------FLOATING OBJECTS--------------- */
 
-.floatingbutton {
-  position: fixed;
-  top: 200px;
-  right: 0px;
-  background-color: transparent;
-  color: white;
-  /* floating button fixed to screen */
-}
+@media (min-width: 1024px) {
+  .floatingbutton {
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    background-color: transparent;
+    color: white;
+    /* floating button fixed to screen */
+  }
 
-.floatingMenu {
-  display: none;
-  position: fixed;
-  top: 200px;
-  right: 40px;
-  z-index: 99;
-  /* floating menu backbox */
-}
+  .floatingMenu {
+    display: none;
+    position: fixed;
+    top: 200px;
+    right: 40px;
+    z-index: 99;
+    /* floating menu backbox */
+  }
 
-.browser_floating {
-  border-radius: 7px;
-  height: 350px;
-  width: 250px;
-  background-color: #1e1e1edc;
-  color: white;
-  box-shadow: 2px 2px 10px #0f0f0f;
-  /* floating menu onclick displayed browser */
-}
+  .browser_floating {
+    border-radius: 7px;
+    height: 350px;
+    width: 250px;
+    background-color: #1e1e1edc;
+    color: white;
+    box-shadow: 2px 2px 10px #0f0f0f;
+    /* floating menu onclick displayed browser */
+  }
 
-.browser_bar_floating {
-  background-color: #191919;
-  height: 25px;
-  border-radius: 7px 7px 0px 0px;
-  border-top: rgb(47, 47, 47) 1px solid;
-  border-bottom: black 1px solid;
-  color: gray;
-  padding-left: 25px;
-  /* floating menu onclick displayed browser bar */
-}
+  .browser_bar_floating {
+    background-color: #191919;
+    height: 25px;
+    border-radius: 7px 7px 0px 0px;
+    border-top: rgb(47, 47, 47) 1px solid;
+    border-bottom: black 1px solid;
+    color: gray;
+    padding-left: 25px;
+    /* floating menu onclick displayed browser bar */
+  }
 
-span.anchor {
-  display: block;
-  position: relative;
-  top: -100px;
-  visibility: hidden;
-  /* anchers moved up 100px because the nav lays over the body */
+  span.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+    /* anchers moved up 100px because the nav lays over the body */
+  }
 }
 
 /* ---------------FONTAWESOME ICONS--------------- */
@@ -944,3 +946,103 @@ a {
   width: 650px;
   z-index: 90;
 } */
+
+/* MEDIA QUERY MOBILE */
+
+@media (max-width: 375px) {
+  .header_section {
+    /* height: 790px; */
+    background-color: var(--background);
+    margin-left: 5%;
+    width: 100vw;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .header_section_content {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* width: 90%; */
+    z-index: 90;
+    text-align: center;
+    /* header section content */
+  }
+  .topnav {
+    position: fixed;
+    display: flex;
+    top: 0;
+    z-index: 99;
+    width: 100vw;
+    height: 60px;
+  }
+
+  .topnav_back {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 98;
+    width: 100vw;
+    min-height: 60px;
+    background-color: var(--topnav_background);
+  }
+
+  .browser {
+    display: inline-block;
+    border-radius: 7px;
+    height: 650px;
+    width: 90vw;
+    background-color: var(--browser_background);
+    color: white;
+    box-shadow: 2px 2px 10px var(--browser_box_shadow);
+  }
+
+  .browsershort {
+    height: 32vh;
+    width: 90vw;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-bottom: 20px;
+    /* first flex box left settings */
+  }
+
+  .browsershort_sec {
+    height: 50vh;
+    background-image: url(/portfolio_project/images/01.jpg);
+    /* background-image: url(./images/01.jpg); */
+    background-size: cover;
+    margin: 0 auto;
+    /* second flex box left settings */
+  }
+
+  .browsershort_sec_inside {
+    height: 200px;
+    width: 60%;
+    background-color: var(--browsershort_second_inside);
+    margin: 0 auto;
+    /* flex box settings inside second flex box left settings */
+  }
+
+  .browsershort_bottom_section .fas {
+    font-size: 2em;
+    margin-top: 5px;
+    color: rgb(209, 209, 209);
+  }
+
+  .browserright {
+    margin-top: 10%;
+    height: 650px;
+    width: 90vw;
+    /* flex box settings right large flex box  */
+  }
+
+  .header_section_content {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 100%;
+    z-index: 90;
+    /* header section content */
+  }
+}
